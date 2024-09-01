@@ -8,7 +8,7 @@ const MainContainer = () => {
     //const [data,setData]= useState("");
     const dispatch = useDispatch();
     const handleClick=()=>{
-        // console.log(data);
+        //console.log(inputValue);
         // console.log(Date());
         const date=Date();
         dispatch(pushTask({inputValue,date}));

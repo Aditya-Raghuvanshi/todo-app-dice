@@ -12,7 +12,7 @@ const Row = ({item,index}) => {
   return (
     <div className='flex justify-between m-4'>
         <h1 className='px-2'>{index}</h1>
-      <h1 className='px-2 w-1/2'>{item.data}</h1>
+      <h1 className='px-2 w-1/2'>{item.inputValue}</h1>
       <h1 className='px-2'>{item.date}</h1>
       <button onClick={handleClick} className='h-10 w-10'><img src="https://png.pngtree.com/png-clipart/20231016/original/pngtree-green-recycle-bin-with-recycle-symbol-png-image_13324116.png" alt="" /></button>
     </div>
