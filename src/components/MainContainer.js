@@ -5,13 +5,13 @@ import DisplayAllTask from './DisplayAllTask';
 
 const MainContainer = () => {
     const [inputValue,setInputValue]=useState("");
-    const [data,setData]= useState("");
+    //const [data,setData]= useState("");
     const dispatch = useDispatch();
     const handleClick=()=>{
         // console.log(data);
         // console.log(Date());
         const date=Date();
-        dispatch(pushTask({data,date}));
+        dispatch(pushTask({inputValue,date}));
         setInputValue("");
     }
   return (
